@@ -5,16 +5,9 @@
 @import 'reset';
 
 body{
-  color:red;
+ 
 }
-.box{
-  background:black;
-  padding:30px;
-  &-inner{
-     display:flex;
-     justify-content: space-between;
-  }
-}
+
 
 
 @import 'media'
