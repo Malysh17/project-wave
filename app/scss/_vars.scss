@@ -1,0 +1,30 @@
+// flexe
+
+@mixin flex-center () {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Zentrieren von Elementen in einem Block
+
+//fonts
+@mixin font ($name,&w, $url1) {
+  font-family: 'Quicksand-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Quicksand-Regular'),
+  url('../fonts/Quicksand-Regular.woff2') format('woff2'),
+  url('../fonts/Quicksand-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@mixin font ($name,$w, $url1, $url2) {
+  font-family: $name;
+  font-weight: $w;
+  font-style: normal;
+  src: local($name),
+  url($url1) format('woff2'),
+  url($url2) format('woff');
+  font-display: swap;
+}
